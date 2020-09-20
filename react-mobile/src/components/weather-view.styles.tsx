@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
         padding: 30
     },
     toolbar: {
-        flex: 1
+        flex: 0.5
     },
     list: {
         flex: 2
@@ -15,5 +15,13 @@ export const styles = StyleSheet.create({
     map: {
         flex: 2,
         marginBottom: 10
+    },
+    listItem: {
+        padding: 20,
+        marginVertical: 2,
+        marginHorizontal: 2,
+        borderColor: 'lightgrey',
+        borderWidth: 1,
+        borderRadius: 3
     }
 })

@@ -53,7 +53,7 @@ export function WeatherView({}: WeatherViewOptions) {
         <FlatList 
             data={weatherData} 
             renderItem={(item) => 
-                <Text>
+                <Text style={styles.listItem}>
                     {item.item.id + " " + item.item.weather[0].description}
                 </Text>
             }

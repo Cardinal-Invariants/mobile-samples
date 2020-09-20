@@ -26,6 +26,6 @@ export interface Forecast {
 export class WeatherService {
     public static getWeather(): Promise<Forecast> {
         return axios.get('https://pro.openweathermap.org/data/2.5/forecast/climate?zip=94040,us&appid=b1b15e88fa797225412429c1c50c122a1')
-        .then(resp => resp.data)
+                .then(resp => resp.data)
     }
 }
