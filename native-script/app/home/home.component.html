@@ -1,0 +1,20 @@
+<GridLayout>
+    <ScrollView>
+        <StackLayout class="home-panel">
+            <!--Add your page content here-->
+            <Button text="Get weather" (tap)="onButtonTap()"></Button>
+
+
+            <ListView [items]="weatherData" class="listView">
+                <ng-template let-item="item" let-i="index">
+                    <StackLayout>
+                        <Label
+                            [text]='i + " " + item.weather[0].description'>
+                        </Label>
+                    </StackLayout>
+                </ng-template>
+            </ListView>
+
+        </StackLayout>
+    </ScrollView>
+</GridLayout>
